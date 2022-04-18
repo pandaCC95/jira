@@ -4,13 +4,16 @@ import App from './App';
 import { createRoot } from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { loadDevTools } from "jira-dev-tool";
+import { AppProviders } from 'Context';
 
 loadDevTools(()=> {
   const container = document.querySelector('#root')!; //! null check in TS
   const root = createRoot(container);
   root.render(
     <React.StrictMode>
-      <App />
+      <AppProviders>
+        <App />
+      </AppProviders>
     </React.StrictMode>
   );
 })
