@@ -4,6 +4,7 @@ import App from './App';
 import { createRoot } from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { loadDevTools } from "jira-dev-tool";
+import 'antd/dist/antd.less';
 import { AppProviders } from 'Context';
 
 loadDevTools(()=> {
