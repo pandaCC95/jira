@@ -2,6 +2,7 @@
 import { useAuth } from "Context/auth-context";
 //import { FormEvent } from "react";
 import { Button, Form, Input } from "antd";
+import { LongButton } from "unauthenticated-app";
 
 export const LoginScreen = () => {
     const {login} = useAuth();
@@ -22,7 +23,7 @@ export const LoginScreen = () => {
                 <Input id={'password'} type='text' placeholder="password"/> 
             </Form.Item>
             <Form.Item>
-                <Button htmlType="submit" type={'primary'}>Login</Button>
+                <LongButton htmlType="submit" type={'primary'}>Login</LongButton>
             </Form.Item>
         </Form>
     )
